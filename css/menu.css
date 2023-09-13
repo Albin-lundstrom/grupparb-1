@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.mango-main-div {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 10fr 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+    
+.nav-bar { 
+    grid-area: 1 / 1 / 2 / 2; 
+}
+
+.nav-bar-main{
+    text-align: center;
+} 
+
+.nav-bar-child{
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.nav-bar-chd:nth-child(1) img{
+    border: 10px solid;
+    border-image-slice: 1;
+    border-width: 3px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-image-source: radial-gradient( black 80%, white 90%);
+}
+
+.nav-bar-chd:nth-child(1){
+    margin-bottom: 10px;
+}
+
+.nav-bar-chd:nth-child(2){
+    border: 10px solid;
+    border-image-slice: 1;
+    border-width: 3px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-image-source: radial-gradient( black 80%, white 90%);
+    height: 70%; 
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.nav-bar-chd:nth-child(2) a{
+    color: black;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+.body-div { 
+    grid-area: 2 / 1 / 3 / 2; 
+}
+
+.fotter-bar { 
+    grid-area: 3 / 1 / 4 / 2; 
+    border: 10px solid;
+    border-image-slice: 1;
+    border-width: 3px;
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+    border-image-source: radial-gradient( black 80%, white 90%);
+    height: 70%; 
+    text-align: center;
+    font-size: 1.2em;
+} 
+
+.footer-chd img{
+    width: 15%;
+    height: 15%;
+    border: 10px solid;
+    border-image-slice: 1;
+    border-width: 3px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-image-source: radial-gradient( black 80%, white 90%);
+}
+
+.footer-chd:nth-child(2){
+    text-align: center;
+    font-size: 0.8em;
+}
+
+.footer-chd:nth-child(2) p{
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+
+.footer-chd:nth-child(2) #fsp{
+    margin-bottom: 5px;
+}
+
+.footer-chd:nth-child(2) a{
+    color: black;
+    text-decoration: none;
+}
