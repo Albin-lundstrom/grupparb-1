@@ -89,11 +89,89 @@ body{
     height: 30%;
 }
 
+:root {
+    --no-of-slides: 6;
+    --slides-in-view: 6;
+    --slide-width: 300px;
+    --slide-height: 450px;
+    --iteration-time: 13s;
+}
+  
+@keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(var(--slide-width) * var(--no-of-slides)* -1));
+    }
+}
+  
+.carousel__wrapper {
+    display: flex;
+    align-items: center;
+    
+    width: calc(var(--slides-in-view) * var(--slide-width));
+    overflow: hidden;
+    /* border: 1px dashed gray; */
+    margin: 0 auto;
+}
+  
+ .carousel {
+    padding: 100px 0;
+    padding-top: 0;
+    
+    overflow: hidden;
+    width: calc(2 * var(--no-of-slides));
+}
+  
+.carousel__slide {
+    animation: scroll var(--iteration-time) linear infinite;
+    display: flex;
+    flex-direction: column;
+    
+    flex: 0 0 auto;
+    width: var(--slide-width);
+    height: var(--slide-height);
+    box-sizing: border-box;
+    /*border: 1px dotted darkblue;*/
+}
+  
+.carousel__image {
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    height: 50%;
+    /*width: 100px;*/
+    margin: 15px 5px;
+}
+  
+  
+/* just for analysis remove this 3 rules later*/
+      /* .carousel__slide {
+        position: relative;
+      }
+  
+      .carousel {
+        counter-reset: slideNo;
+      }
+  
+      .carousel__slide::before {
+        counter-increment: slideNo;
+        content: counter(slideNo);
+        position: absolute;
+        top: 0%;
+        left: 50%;
+        font-size: 2rem;
+        color: lime;
+      } */
+
 .div-food img{
     text-align: center;
     height: 100px;
     width: 100px;
 }
+
+
 
 .div-text{
     text-align: center;
