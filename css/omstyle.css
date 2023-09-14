@@ -1,3 +1,4 @@
+/*
 *{
     margin: 0;
     padding: 0;
@@ -54,4 +55,239 @@
     align-items: center;
     justify-content: center;
     font-size: 18px;
+} 
+*/
+
+
+
+
+
+
+/* Css för alla html filer */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Parent div Styling för Grid */
+
+.mango-main-div {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 5fr 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+    
+/* Nav bar CSS styling */
+
+.nav-bar { 
+    grid-area: 1 / 1 / 2 / 2; 
+}
+
+.nav-bar-child{
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.nav-bar-chd:nth-child(1) img{
+    border: 10px solid;
+    border-image-slice: 1;
+    border-width: 3px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-image-source: radial-gradient( black 80%, white 90%);
+}
+
+.nav-bar-chd:nth-child(1){
+    margin-bottom: 10px;
+}
+
+.nav-bar-chd:nth-child(2){
+    border: 10px solid;
+    border-image-slice: 1;
+    border-width: 3px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-image-source: radial-gradient( black 80%, white 90%);
+    height: 70%; 
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.nav-bar-chd:nth-child(2) a{
+    color: black;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+/* Body div styling */
+
+.body-div { 
+    grid-area: 2 / 1 / 3 / 2; 
+}
+
+
+/* Fotter bar Styling */
+
+.fotter-bar { 
+    grid-area: 3 / 1 / 4 / 2; 
+    border: 10px solid;
+    border-image-slice: 1;
+    border-width: 3px;
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+    border-image-source: radial-gradient( black 80%, white 90%);
+    height: 70%; 
+    text-align: center;
+    font-size: 1.2em;
+} 
+
+.footer-chd img{
+    width: 15%;
+    height: 15%;
+    border: 10px solid;
+    border-image-slice: 1;
+    border-width: 3px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-image-source: radial-gradient( black 80%, white 90%);
+}
+
+.footer-chd:nth-child(2){
+    text-align: center;
+    font-size: 0.8em;
+}
+
+.footer-chd:nth-child(2) p{
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+
+.footer-chd:nth-child(2) #fsp{
+    margin-bottom: 5px;
+}
+
+.footer-chd:nth-child(2) a{
+    color: black;
+    text-decoration: none;
+}
+
+
+
+
+
+
+#middle-box {
+    background: linear-gradient(40deg, #45ff4e, #ffa722);
+    display: flex;
+    width: 100%;
+    height: 750px;
+    top: 250px;
+    align-items: center;
+    justify-content: center;
+}
+
+#text-box {
+    width: 750px;
+    height: 600px;
+    text-align: center;
+}
+
+#text-box-inner-h1 {
+    display: flex;
+    font-size: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+#text-box-inner-h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+#text-box-inner-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+
+#middle-box-k1 {
+    background: linear-gradient(-150deg, #4fdbbd, #ff8935);
+    display: flex;
+    width: 100%;
+    height: 750px;
+    top: 250px;
+    align-items: center;
+    justify-content: center;
+}
+
+#text-box-k1 {
+    width: 1250px;
+    height: 300px;
+    text-align: center;
+}
+
+#text-box-inner-h1-k1 {
+    display: flex;
+    float: left;
+    height: 100%;
+    width: 50%;
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+#text-box-inner-h2-k1 {
+    display: flex;
+    float: right;
+    height: 100%;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.black-link {
+    text-decoration: none;
+    color: black;
+}
+
+#gallery-page {
+    background: linear-gradient(-30deg,  #41ffac, #ffac1e);
+    width: 80%;
+    height: fit-content;
+    padding: 2%;
+    line-height:0;
+    -webkit-column-count:5; 
+    -webkit-column-gap:5px; 
+    -moz-column-count:5;
+    -moz-column-gap:5px;
+    column-count:5;
+    column-gap:5px;
+}
+
+.gimg {
+    width:100%;
+    height: auto;
+    border: 1px solid black;
+    margin-bottom: 5px;
+}
+
+
+#gallery-body {
+    display: flex;
+    justify-content: center;
 }
