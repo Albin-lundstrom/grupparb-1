@@ -85,14 +85,13 @@ body{
 .div-food{
     display: flex;
     justify-content: center;
-    height: 30%;
 }
 
 :root {
     --no-of-slides: 6;
     --slides-in-view: 4;
     --slide-width: 450px;
-    --slide-height: 600px;
+    --slide-height: 450px;
     --iteration-time: 13s;
 }
   
@@ -116,9 +115,7 @@ body{
 }
   
  .carousel {
-    padding: 100px 0;
-    padding-top: 0;
-    
+    height: 100%;
     overflow: hidden;
     width: calc(2 * var(--no-of-slides));
 }
@@ -139,7 +136,7 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     
-    height: 50%;
+    height: 100%;
     /*width: 100px;*/
     margin: 15px 5px;
 }
@@ -175,8 +172,7 @@ body{
 
 .div-text{
     text-align: center;
-    margin-bottom: 5%;
-    height: 30%;
+    margin-bottom: 3%;
 }
 
 .div-text h2{
@@ -199,11 +195,11 @@ body{
 
 .div-map{
     text-align: center;
-    height: 30%;
+    height: 35%;
 }
 
 .div-map h2{
-    margin-bottom: 10px;
+    margin-bottom: 1.5%;
     font-size: 2em;
 }
 
@@ -241,6 +237,13 @@ body{
     padding-top: 0.3%;
 }
 
+.footer-chd .facebook{
+    display: inline-block;
+    width: 1%;
+    height: 1%;
+    border: none !important;
+}
+
 .footer-chd:nth-child(2){
     text-align: center;
     font-size: 0.8em;
@@ -248,7 +251,6 @@ body{
 
 .footer-chd:nth-child(2) p{
     margin-top: 5px;
-    margin-bottom: 30px;
 }
 
 .footer-chd:nth-child(2) #fsp{
