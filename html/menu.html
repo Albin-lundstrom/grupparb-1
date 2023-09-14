@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mango Resturang</title>
+    <title>Meny</title>
     <link rel="stylesheet" href="../css/menu.css">
+    <script src="../js/menu.js"></script>
 </head>
 <body>
     <div class="mango-main-div">
@@ -12,28 +13,70 @@
             <div class="nav-bar-main">
                 <div class="nav-bar-child">
                     <div class="nav-bar-chd">
-                        <img src="../img/mangologo4.png" alt="Mango Logo">
+                        <a href="../index.html">
+                            <img src="../img/mangologo4.png" alt="Mango Logo">
+                        </a>
                     </div>
                     <div class="nav-bar-chd">
-                            <a href="./html/gallary.html">Meny</a>
-                            <a href="./html/history.html">Om</a>
-                            <a href="./html/place.html">Galleri</a>
-                            <a href="./html/kontakt.html">Kontakt</a>
+                            <a href="../html/gallary.html">Meny</a>
+                            <a href="../html/history.html">Om</a>
+                            <a href="../html/place.html">Galleri</a>
+                            <a href="../html/kontakt.html">Kontakt</a>
                     </div>
                 </div>
             </div> 
         </div>
-        <div class="body-div"> 
+        <div class="body-div"> <!--Body div start-->
+            
+                <div class="tab">
+                    <button class="tablinks" onclick="openCity(event, 'Lunch')">Lunch</button>
+                    <button class="tablinks" onclick="openCity(event, 'thai')">Thai</button>
+                    <button class="tablinks" onclick="openCity(event, 'sushi')">Sushi</button>
+                </div>
+            
+                <div id="Lunch" class="tabcontent">
+                    <h1 class="titlecenter">Lunch kl 10-14 (vardagar)</h1>
+                    <p class="foodcontent">Lax rullar</p>   
+                    <p class="foodcontent">Lax rullar</p>   
+                    <p class="foodcontent">Lax rullar</p>   
+                    <p class="foodcontent">Lax rullar</p>   
+                    <p class="foodcontent">Lax rullar</p>   
+                    <p class="foodcontent">Lax rullar</p>   
+                </div>
+            
+                <div id="thai" class="tabcontent">
+                    <h1 class="titlecenter">Lunch kl 10-14 (vardagar)</h1> 
+                    <div class="foodcontent">
+                        <img src="../img/menu/Pad met mamong.webp" alt="" class="foodimg ">
+                        <p class="foodname">1. Pad met mamong</p>
+                        <p class="fooddescription">Wokad med cashewnötter & grönsaker, med chiliolja, serveras med ris.
+                        </p>
+                    </div>    
+                </div>
+            
+                <div id="sushi" class="tabcontent">
+                    <h1 class="titlecenter">Lunch kl 10-14 (vardagar)</h1>
+                    <p class="foodcontent">Lax rullar</p>   
+                    <p class="foodcontent">Lax rullar</p>   
+                    <p class="foodcontent">Lax rullar</p>   
+                    <p class="foodcontent">Lax rullar</p>   
+                    <p class="foodcontent">Lax rullar</p>   
+                    <p class="foodcontent">Lax rullar</p>   
+                </div>
+          
+        </div> <!--Body div end-->
 
-        </div>
         <div class="fotter-bar"> 
             <div class="footer-chd">
-                <img src="../img/mangologo4.png" alt="Mango Logo">
+                <a href="../index.html">
+                    <img src="../img/mangologo4.png" alt="Mango Logo">
+                </a>
             </div>
             <div class="footer-chd">
                 <p id="fsp">Mangorestaurang</p>
                 <a href="../html/menu.html">Kontakta oss</a>
                 <p>Stockholms län</p>
+                
             </div>
         </div>
     </div> 
