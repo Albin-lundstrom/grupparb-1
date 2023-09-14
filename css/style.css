@@ -1,9 +1,15 @@
-/* Css för alla html filer */
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
 
 *{
     margin: 0;
     padding: 0;
 }
+
+body{
+    font-family: 'Josefin Sans', sans-serif;
+}
+
 
 /* Parent div Styling för Grid */
 
@@ -69,6 +75,57 @@
     grid-area: 2 / 1 / 3 / 2; 
 }
 
+.start-page{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.div-food{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30%;
+}
+
+.div-food img{
+    text-align: center;
+    height: 100px;
+    width: 100px;
+}
+
+.div-text{
+    text-align: center;
+    margin-bottom: 5%;
+    height: 30%;
+}
+
+.div-text h2{
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+.div-text h3{
+    font-weight: bold;
+    margin-bottom: 7px;
+    margin-top: 10px;
+}
+
+.div-map{
+    text-align: center;
+    height: 30%;
+}
+
+.div-map h2{
+    margin-bottom: 10px;
+}
+
+.div-map iframe{
+    width: 100%;
+    height: 100%;
+}
 
 /* Fotter bar Styling */
 
