@@ -228,7 +228,7 @@
     background: linear-gradient(-150deg, #4fdbbd, #ff8935);
     display: flex;
     width: 100%;
-    height: 750px;
+    height: 275px;
     top: 250px;
     align-items: center;
     justify-content: center;
@@ -267,7 +267,7 @@
 
 #gallery-page {
     background: linear-gradient(-30deg,  #41ffac, #ffac1e);
-    width: 80%;
+    width: 100%;
     height: fit-content;
     padding: 2%;
     line-height:0;
@@ -282,7 +282,6 @@
 .gimg {
     width:100%;
     height: auto;
-    border: 1px solid black;
     margin-bottom: 5px;
 }
 
