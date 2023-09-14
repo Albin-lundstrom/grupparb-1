@@ -1,9 +1,15 @@
-/* Css för alla html filer */
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
 
 *{
     margin: 0;
     padding: 0;
 }
+
+body{
+    font-family: 'Josefin Sans', sans-serif;
+}
+
 
 /* Parent div Styling för Grid */
 
@@ -69,6 +75,138 @@
     grid-area: 2 / 1 / 3 / 2; 
 }
 
+.start-page{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.div-food{
+    display: flex;
+    justify-content: center;
+}
+
+:root {
+    --no-of-slides: 6;
+    --slides-in-view: 4;
+    --slide-width: 450px;
+    --slide-height: 450px;
+    --iteration-time: 13s;
+}
+  
+@keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(var(--slide-width) * var(--no-of-slides)* -1));
+    }
+}
+  
+.carousel__wrapper {
+    display: flex;
+    align-items: center;
+    
+    width: calc(var(--slides-in-view) * var(--slide-width));
+    overflow: hidden;
+    /* border: 1px dashed gray; */
+    margin: 0 auto;
+}
+  
+ .carousel {
+    height: 100%;
+    overflow: hidden;
+    width: calc(2 * var(--no-of-slides));
+}
+  
+.carousel__slide {
+    animation: scroll var(--iteration-time) linear infinite;
+    display: flex;
+    flex-direction: column;
+    
+    flex: 0 0 auto;
+    width: var(--slide-width);
+    height: var(--slide-height);
+    box-sizing: border-box;
+    /*border: 1px dotted darkblue;*/
+}
+  
+.carousel__image {
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    height: 100%;
+    /*width: 100px;*/
+    margin: 15px 5px;
+}
+  
+  
+/* just for analysis remove this 3 rules later*/
+
+/* .carousel__slide {
+    position: relative;
+}
+  
+  .carousel {
+    counter-reset: slideNo;
+}
+  
+.carousel__slide::before {
+    counter-increment: slideNo;
+    content: counter(slideNo);
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    font-size: 2rem;
+    color: lime;
+} */
+
+.div-food img{
+    text-align: center;
+    height: 100px;
+    width: 100px;
+}
+
+
+
+.div-text{
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+.div-text h2{
+    font-weight: bold;
+    margin-bottom: 0.5%;
+    margin-top: 1%;
+    font-size: 4.5em;
+}
+
+.div-text h3{
+    font-weight: bold;
+    margin-bottom: 0.3%;
+    margin-top: 1%;
+    font-size: 3.5em;
+}
+
+.div-text p{
+    font-size: 2.5em;
+}
+
+.div-map{
+    text-align: center;
+    height: 35%;
+}
+
+.div-map h2{
+    margin-bottom: 1.5%;
+    font-size: 2em;
+}
+
+.div-map iframe{
+    width: 100%;
+    height: 100%;
+}
 
 /* Fotter bar Styling */
 
@@ -96,6 +234,14 @@
     border-left: 0;
     border-right: 0;
     border-image-source: radial-gradient( black 80%, white 90%);
+    padding-top: 0.3%;
+}
+
+.footer-chd .facebook{
+    display: inline-block;
+    width: 1%;
+    height: 1%;
+    border: none !important;
 }
 
 .footer-chd:nth-child(2){
@@ -105,7 +251,6 @@
 
 .footer-chd:nth-child(2) p{
     margin-top: 5px;
-    margin-bottom: 30px;
 }
 
 .footer-chd:nth-child(2) #fsp{
