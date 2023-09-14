@@ -9,6 +9,7 @@
 body{
     font-family: 'Josefin Sans', sans-serif;
     width: 100vw;
+    background-color: antiquewhite;
 }
 
 
@@ -46,7 +47,7 @@ body{
     border-top: 0;
     border-left: 0;
     border-right: 0;
-    border-image-source: radial-gradient( black 80%, white 90%);
+    border-image-source: radial-gradient( black 80%, antiquewhite 90%);
 }
 
 .nav-bar-chd:nth-child(1){
@@ -60,7 +61,7 @@ body{
     border-top: 0;
     border-left: 0;
     border-right: 0;
-    border-image-source: radial-gradient( black 80%, white 90%);
+    border-image-source: radial-gradient( black 80%, antiquewhite 90%);
     height: 70%; 
     text-align: center;
     font-size: 1.2em;
@@ -258,7 +259,7 @@ body{
     border-bottom: 0;
     border-left: 0;
     border-right: 0;
-    border-image-source: radial-gradient( black 80%, white 90%);
+    border-image-source: radial-gradient( black 80%, antiquewhite 90%);
     height: 70%; 
     text-align: center;
     font-size: 1.2em;
@@ -274,7 +275,7 @@ body{
     border-top: 0;
     border-left: 0;
     border-right: 0;
-    border-image-source: radial-gradient( black 80%, white 90%);
+    border-image-source: radial-gradient( black 80%, antiquewhite 90%);
     padding-top: 0.3%;
 }
 

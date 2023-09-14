@@ -70,6 +70,10 @@
     padding: 0;
 }
 
+body{
+    background-color: antiquewhite;
+}
+
 /* Parent div Styling för Grid */
 
 .mango-main-div {
@@ -102,7 +106,7 @@
     border-top: 0;
     border-left: 0;
     border-right: 0;
-    border-image-source: radial-gradient( black 80%, white 90%);
+    border-image-source: radial-gradient( black 80%, antiquewhite 90%);
 }
 
 .nav-bar-chd:nth-child(1){
@@ -116,7 +120,7 @@
     border-top: 0;
     border-left: 0;
     border-right: 0;
-    border-image-source: radial-gradient( black 80%, white 90%);
+    border-image-source: radial-gradient( black 80%, antiquewhite 90%);
     height: 70%; 
     text-align: center;
     font-size: 1.2em;
@@ -145,7 +149,7 @@
     border-bottom: 0;
     border-left: 0;
     border-right: 0;
-    border-image-source: radial-gradient( black 80%, white 90%);
+    border-image-source: radial-gradient( black 80%, antiquewhite 90%);
     height: 70%; 
     text-align: center;
     font-size: 1.2em;
@@ -160,7 +164,7 @@
     border-top: 0;
     border-left: 0;
     border-right: 0;
-    border-image-source: radial-gradient( black 80%, white 90%);
+    border-image-source: radial-gradient( black 80%, antiquewhite 90%);
 }
 
 .footer-chd:nth-child(2){

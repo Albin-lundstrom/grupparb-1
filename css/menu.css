@@ -5,12 +5,16 @@
     padding: 0;
 }
 
+body{
+    background-color: antiquewhite;
+}
+
 /* Parent div Styling för Grid */
 
 .mango-main-div {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 10fr 1fr;
+    /* grid-template-rows: 1fr 10fr 1fr; */
     grid-column-gap: 0px;
     grid-row-gap: 0px;
 }
@@ -19,6 +23,7 @@
 
 .nav-bar { 
     grid-area: 1 / 1 / 2 / 2; 
+    height: 100%;
 }
 
 .nav-bar-child{
@@ -37,7 +42,7 @@
     border-top: 0;
     border-left: 0;
     border-right: 0;
-    border-image-source: radial-gradient( black 80%, white 90%);
+    border-image-source: radial-gradient( black 80%, antiquewhite 90%);
 }
 
 .nav-bar-chd:nth-child(1){
@@ -51,7 +56,7 @@
     border-top: 0;
     border-left: 0;
     border-right: 0;
-    border-image-source: radial-gradient( black 80%, white 90%);
+    border-image-source: radial-gradient( black 80%, antiquewhite 90%);
     height: 70%; 
     text-align: center;
     font-size: 1.2em;
@@ -69,14 +74,13 @@
     grid-area: 2 / 1 / 3 / 2; 
     display: flex;
     flex-direction:column;
-    background-color: grey;
     min-height: 10%;
+    align-items: center;
+    justify-content: center;
 }
 
-
-
 .tab {
-    padding: 30px;
+    padding: 30px 0;
     display: flex;
     justify-content:center;
 }
@@ -92,36 +96,57 @@
 }
   
 .tab button:hover {
-    background-color: #ddd;
+    background-color: rgb(140, 130, 115);
 }
   
 .tab button.active {
-    background-color: #ccc;
+    background-color: rgb(180, 170, 150);
 }
   
 .tabcontent {
     display: flex;
     flex-wrap: wrap;
-    margin-left: 25%;
-    justify-content: flex-start;
+    /* margin-left: 25%; */
+    justify-content: center;
     width: 55%;
-
+    align-content: center;
 }
 
 .menu{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 4fr 2fr 1fr;
+    grid-template-rows: 4fr 2fr 1fr 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px; 
     margin: 10px;
     padding: 10px;
-    border: solid 4px black;
-    border-radius: 20px;
+    /* border: solid 1.5px black; */
+    border-radius: 25px;
     height: 400px;
     width: 300px;
+    background-color: #ccc;
+    box-shadow: 2.5px 2.5px 5px black;
 }
 
+#sushi-div{
+    background-color:rgb(170, 200, 200);
+}
+
+#thai-div{
+    background-color: rgb(240, 140, 90);
+}
+
+#nudlar-div{
+    background-color: rgb(255, 230, 150);
+}
+
+#kokosmjolk-div{
+    background-color: rgb(255, 255, 240);
+}
+
+#thai-ov-ra-div{
+    background-color: rgb(200, 255, 170);
+}
 
 .spicy{
     background-color: #ba0c1e;
@@ -138,23 +163,24 @@
 
 .price{
     height: 10%;
-    grid-area: 3 / 1 / 4 / 2;
+    grid-area: 4 / 1 / 5 / 2;
     font-size: 30px;
     display: flex;
     justify-content: center;
 }
 
-/* .foodimages{
-    padding-top: 30px;
-} */
-
 .foodimg{
-    height: 30%;
     grid-area: 1 / 1 / 2 / 2;
     display: flex;
     justify-content: center;
-    height: 140px;
-    width: auto;
+    align-content: center;
+    background-size: contain;
+}
+
+.foodimg img{
+    height: 180px;
+    width: 300px;
+    border-radius: 10px;
 }
 
 .fooddic{
@@ -165,48 +191,86 @@
 .titdec{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 4fr;
+    grid-template-rows: 1fr 2fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px; 
+    height: 100%;
 }
 
 p.foodtitle{
     grid-area: 1 / 1 / 2 / 2;
-    padding-top: 10px;
-    font-size: 30px;
-    display: flex;
-    justify-content: center;
+    /* padding-top: 10px; */
+    padding: 10px 0;
+    font-size: 1.4em;
+    margin-bottom: 1%;
+    font-weight: bolder;
+    border: 10px solid;
+    border-image-slice: 1;
+    border-width: 2px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-color: black;
 }
 
 p.fooddescription{
     grid-area: 2 / 1 / 3 / 2;
     /* padding-top: 30px; */
-    font-size: 20px;
-    display: flex;
-    justify-content: center;
+    font-size: 1.2em;
 }
 
-.foodcattitle{
-    font-size: 80px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-left: 40%;
-    margin-right: 20%;
+.foodimages{
+    grid-area: 3 / 1 / 4 / 2; 
+}
 
+.foodcattitle0{
+    font-size: 5em;
+    margin-left: 50% !important;
+    margin-right: 50%; 
+    text-align: center;
+    margin-top: 2.5%;
+    text-decoration: underline;
+}
+
+.foodcattitle1{
+    font-size: 3.5em;
+    margin-left: 50% !important;
+    margin-right: 50%; 
+    text-align: center;
+    margin-top: 2.5%;
+    text-decoration: underline;
 }
 .foodcattitle2{
-    font-size: 80px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-left: 30%;
-    margin-right: 20%;
-    height: 10%;
-
+    font-size: 3.5em;
+    margin-left: 50% !important;
+    margin-right: 50%; 
+    margin-top: 2.5%;
+    text-decoration: underline;
 }
 
+.foodcattitle3{
+    font-size: 3.5em;
+    margin-right: 25%; 
+    margin-left: 25% !important;
+    text-align: center;
+    margin-top: 2.5%;
+    text-decoration: underline;
+}
+
+.foodcattitle4{
+    font-size: 5em;
+    margin-left: 50% !important;
+    margin-right: 50%; 
+    text-align: center;
+    margin-top: 2.5%;
+    text-decoration: underline;
+}
+
+
+
 /* Body styling end */
+
+/* Fotter bar Styling */
 
 /* Fotter bar Styling */
 
@@ -218,13 +282,13 @@ p.fooddescription{
     border-bottom: 0;
     border-left: 0;
     border-right: 0;
-    border-image-source: radial-gradient( black 80%, white 90%);
+    border-image-source: radial-gradient( black 80%, antiquewhite 90%);
     height: 70%; 
     text-align: center;
     font-size: 1.2em;
+    width: 100vw;
+    margin-top: 5%;
 } 
-
-
 
 .footer-chd img{
     width: 15%;
@@ -235,7 +299,27 @@ p.fooddescription{
     border-top: 0;
     border-left: 0;
     border-right: 0;
-    border-image-source: radial-gradient( black 80%, white 90%);
+    border-image-source: radial-gradient( black 80%, antiquewhite 90%);
+    padding-top: 0.3%;
+}
+
+.footer-chd .facebook{
+    display: inline-block;
+    width: 1%;
+    height: 1%;
+    border: none !important;
+}
+
+@media (max-width: 1000px){
+    .footer-chd img{
+        width: 40%;
+        height: 40%;
+    }
+    .footer-chd .facebook{
+        display: inline-block;
+        width: 10%;
+        height: 10%;
+    }
 }
 
 .footer-chd:nth-child(2){
@@ -245,7 +329,6 @@ p.fooddescription{
 
 .footer-chd:nth-child(2) p{
     margin-top: 5px;
-    margin-bottom: 30px;
 }
 
 .footer-chd:nth-child(2) #fsp{
