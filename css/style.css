@@ -85,15 +85,14 @@ body{
 .div-food{
     display: flex;
     justify-content: center;
-    align-items: center;
     height: 30%;
 }
 
 :root {
     --no-of-slides: 6;
-    --slides-in-view: 6;
-    --slide-width: 300px;
-    --slide-height: 450px;
+    --slides-in-view: 4;
+    --slide-width: 450px;
+    --slide-height: 600px;
     --iteration-time: 13s;
 }
   
@@ -147,23 +146,24 @@ body{
   
   
 /* just for analysis remove this 3 rules later*/
-      /* .carousel__slide {
-        position: relative;
-      }
+
+/* .carousel__slide {
+    position: relative;
+}
   
-      .carousel {
-        counter-reset: slideNo;
-      }
+  .carousel {
+    counter-reset: slideNo;
+}
   
-      .carousel__slide::before {
-        counter-increment: slideNo;
-        content: counter(slideNo);
-        position: absolute;
-        top: 0%;
-        left: 50%;
-        font-size: 2rem;
-        color: lime;
-      } */
+.carousel__slide::before {
+    counter-increment: slideNo;
+    content: counter(slideNo);
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    font-size: 2rem;
+    color: lime;
+} */
 
 .div-food img{
     text-align: center;
@@ -181,14 +181,20 @@ body{
 
 .div-text h2{
     font-weight: bold;
-    margin-bottom: 5px;
-    margin-top: 10px;
+    margin-bottom: 0.5%;
+    margin-top: 1%;
+    font-size: 4.5em;
 }
 
 .div-text h3{
     font-weight: bold;
-    margin-bottom: 7px;
-    margin-top: 10px;
+    margin-bottom: 0.3%;
+    margin-top: 1%;
+    font-size: 3.5em;
+}
+
+.div-text p{
+    font-size: 2.5em;
 }
 
 .div-map{
@@ -198,6 +204,7 @@ body{
 
 .div-map h2{
     margin-bottom: 10px;
+    font-size: 2em;
 }
 
 .div-map iframe{
@@ -231,6 +238,7 @@ body{
     border-left: 0;
     border-right: 0;
     border-image-source: radial-gradient( black 80%, white 90%);
+    padding-top: 0.3%;
 }
 
 .footer-chd:nth-child(2){
