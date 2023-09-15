@@ -65,18 +65,20 @@
 
 
 #middle-box {
-    background: linear-gradient(40deg, #45ff4e, #ffa722);
+    background: linear-gradient(40deg, #45ff4e, #ffa722); 
     display: flex;
     width: 100%;
-    height: 750px;
+    height: fit-content;
     top: 250px;
     align-items: center;
     justify-content: center;
+    padding-bottom: 25px;
+    margin-bottom: 10px;
 }
 
 #text-box {
-    width: 750px;
-    height: 600px;
+    width: 39%;
+    height: fit-content;
     text-align: center;
 }
 
@@ -151,6 +153,7 @@
     -moz-column-gap:5px;
     column-count:5;
     column-gap:5px;
+    margin-bottom: 10px;
 }
 
 .gimg {
@@ -204,10 +207,16 @@
         grid-row-gap: 50px;
         font-size: 20px;
     }
-}
-
-@media (max-width: 800px) {
     #middle-box-k1 {
         height: 500px;
     }
 }
+
+@media (max-width: 800px) {
+    #text-box {
+        width: 80%;
+    }
+}
+
+
+    
