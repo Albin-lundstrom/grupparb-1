@@ -245,9 +245,27 @@ body{
 
 @media (max-width: 1000px){
     .div-map iframe{
+        height: 100%;
+    }
+    .div-map{
         height: 50%;
+        margin-top: 2%;
+    }
+    .div-map h2{
+        margin-bottom: 2%;
     }
 }
+
+.div-tom{
+    height: 50%;
+}
+
+@media (max-width: 1000px){
+    .div-tom{
+        height: 0%;
+    }
+}
+
 
 /* Fotter bar Styling */
 
