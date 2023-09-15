@@ -131,27 +131,27 @@ body{
     box-shadow: 2.5px 2.5px 5px black;
 }
 
-#lunch-div{
+.lunch-div{
     background-color: rgb(240, 140, 90);
 }
 
-#sushi-div{
+.sushi-div{
     background-color:rgb(170, 200, 200);
 }
 
-#thai-div{
+.thai-div{
     background-color: rgb(240, 140, 90);
 }
 
-#nudlar-div{
+.nudlar-div{
     background-color: rgb(255, 230, 150);
 }
 
-#kokosmjolk-div{
+.kokosmjolk-div{
     background-color: rgb(255, 255, 240);
 }
 
-#thai-ov-ra-div{
+.thai-ov-ra-div{
     background-color: rgb(200, 255, 170);
 }
 
@@ -254,6 +254,7 @@ p.fooddescription{
     margin-left: 50% !important;
     margin-right: 50%; 
     margin-top: 2.5%;
+    text-align: center;
 }
 
 .foodcattitle3{
@@ -277,6 +278,7 @@ p.fooddescription{
     margin-left: 20% !important;
     margin-right: 20%; 
     margin-top: 2.5%;
+    text-align: center;
 }
 
 
