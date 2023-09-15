@@ -28,11 +28,272 @@
         </nav>
         <div class="body-div"> <!--Body div start-->
             
-                <div class="tab">
-                    <button class="tablinks" onclick="openCity(event, 'thai')">Thai</button>
-                    <button class="tablinks" onclick="openCity(event, 'sushi')">Sushi</button>
-                </div>
+            <div class="tab">
+                <button class="tablinks" onclick="food(event, 'lunch')">Lunch</button>
+                <button class="tablinks" onclick="food(event, 'thai')">Thai</button>
+                <button class="tablinks" onclick="food(event, 'sushi')">Sushi</button>
+              </div>
+            
+
+                <div id="lunch" class="tabcontent"> <!--Lunch start-->
+                    <p class="foodcattitle5">Lunch kl 10-14 (vardagar)</p>
+                    <p class="foodcattitle4">Sushi</p>
+
+                    <div class="menu" id="lunch-div">
+                        <div class="foodimg">
+                            <img src="../img/menu/sushi/MangoSpecial.webp" alt="">
+                        </div>
+                        <div class="fooddic">
+                            <div class="titdec">
+                                <p class="foodtitle">Mango Special Sushi 9 bitar</p>
+                                <p class="fooddescription">Avokado(1), Krabba(1), Ägg(1), Tofu(1), Räka(1), Norirullar(4)</p>
+                            </div>
+                        </div>
+                        <div class="foodimages">
+                            <div class="push"></div>
+                        </div>
+                        <div class="price"><p>100kr</p></div>
+                    </div>
+
+                    <div class="menu" id="lunch-div">
+                        <div class="foodimg">
+                            <img src="../img/menu/sushi/VegetariskSushi.webp" alt="">
+                        </div>
+                        <div class="fooddic">
+                            <div class="titdec">
+                                <p class="foodtitle">Vegetarisk Sushi 10 bitar/p>
+                                <p class="fooddescription">Avokado(2), Tofu(2), Rättika(1),Lilla sötpotatis(1), Veg-rullar(4)</p>
+                            </div>
+                        </div>
+                        <div class="foodimages">
+                            <img src="../img/menu/spicelevel4.png" alt="" class="spicy">
+                        </div>
+                        <div class="price"><p>108kr</p></div>
+                    </div>
+
+                    <div class="menu" id="lunch-div">
+                        <div class="foodimg">
+                            <img src="../img/menu/sushi/CaliforniaRoll .webp" alt="">
+                        </div>
+                        <div class="fooddic">
+                            <div class="titdec">
+                                <p class="foodtitle">California Roll 10 bitar</p>
+                                <p class="fooddescription">Krabbfisk, Gurka, Avokado, Majonnäs.</p>
+                            </div>
+                        </div>
+                        <div class="foodimages">
+                            <div class="push"></div>
+                        </div>
+                        <div class="price"><p>135kr</p></div>
+                    </div>
+
+                    <p class="foodcattitle5">Måndag Thai 120:-</p>
+ 
+                    <div class="menu" id="lunch-div">
+                        <div class="foodimg">
+                            <img src="../img/menu/thai/Wokadisötsur.webp" alt="">
+                        </div>
+                        <div class="fooddic">
+                            <div class="titdec">
+                                <p class="foodtitle">Wokad i sötsur sås med ananas & grönsaker</p>
+                                <p class="fooddescription">Alternativ: Kyckling/Nötkött/Räkor, serveras med ris.</p>
+                            </div>
+                        </div>
+                        <div class="foodimages">
+                            <div class="push"></div>
+                        </div>
+                    </div>
+
+                    <div class="menu" id="lunch-div">
+                        <div class="foodimg">
+                            <img src="../img/menu/thai/Geangpet-rödcurry.png" alt="">
+                        </div>
+                        <div class="fooddic">
+                            <div class="titdec">
+                                <p class="foodtitle">Röd curry grytor med kokosmjölk</p>
+                                <p class="fooddescription">Alternativ: Kyckling/Nötkött/Räkor, serveras med ris.</p>
+                            </div>
+                        </div>
+                        <div class="foodimages">
+                            <div class="push"></div>
+                        </div>
+                        <div class="price"><p></p></div>
+                    </div>
+
+
+                    <p class="foodcattitle5">Tisdag Thai 120:-</p>
+
+                    <div class="menu" id="lunch-div">
+                        <div class="foodimg">
+                            <img src="../img/menu/thai/Geangkiawwan-gröncurry.png" alt="">
+                        </div>
+                        <div class="fooddic">
+                            <div class="titdec">
+                                <p class="foodtitle">Grön curry grytor med kokosmjölk</p>
+                                <p class="fooddescription">AAlternativ: Kyckling/Nötkött/Räkor, serveras med ris.</p>
+                            </div>
+                        </div>
+                        <div class="foodimages">
+                            <img src="../img/menu/spicelevel4.png" alt="" class="spicy">
+                        </div>
+                        <div class="price"><p></p></div>
+                    </div>
+
+                    <div class="menu" id="lunch-div">
+                        <div class="foodimg">
+                            <img src="../img/menu/thai/wookadingefära.webp" alt="">
+                        </div>
+                        <div class="fooddic">
+                            <div class="titdec">
+                                <p class="foodtitle">Wokad ingefära & grönsaker</p>
+                                <p class="fooddescription">Alternativ: Kyckling/Nötkött/Räkor, serveras med ris.</p>
+                            </div>
+                        </div>
+                        <div class="foodimages">
+                            <div class="push"></div>
+                        </div>
+                        <div class="price"><p></p></div>
+                    </div>
+
+                    <div class="menu" id="lunch-div">
+                        <div class="foodimg">
+                            <img src="../img/menu/thai/Wokadcashewnötter.webp" alt="">
+                        </div>
+                        <div class="fooddic">
+                            <div class="titdec">
+                                <p class="foodtitle">Wokad cashewnötter & grönsaker</p>
+                                <p class="fooddescription">Alternativ: Kyckling/Nötkött/Räkor, serveras med ris.</p>
+                            </div>
+                        </div>
+                        <div class="foodimages">
+                            <img src="../img/menu/spicelevel4.png" alt="" class="spicy">
+                        </div>
+                        <div class="price"><p></p></div>
+                    </div>
+
+                    <p class="foodcattitle5">Onsdag Thai 120:-</p>
+
+                    <div class="menu" id="lunch-div">
+                        <div class="foodimg">
+                            <img src="../img/menu/thai/Wokadnudlar.jpeg" alt="">
+                        </div>
+                        <div class="fooddic">
+                            <div class="titdec">
+                                <p class="foodtitle">Wokad äggnudlar & grönsaker</p>
+                                <p class="fooddescription">Alternativ: Kyckling/Nötkött/Räkor.</p>
+                            </div>
+                        </div>
+                        <div class="foodimages">
+                            <div class="push"></div>
+                        </div>
+                        <div class="price"><p></p></div>
+                    </div>
+                    
+                    <div class="menu" id="lunch-div">
+                        <div class="foodimg">
+                            <img src="../img/menu/thai/Massamancurry.png" alt="">
+                        </div>
+                        <div class="fooddic">
+                            <div class="titdec">
+                                <p class="foodtitle">Massaman curry grytor med kokosmjölk med potatis, morötter, lök och jordnötter</p>
+                            </div>
+                        </div>
+                        <div class="foodimages">
+                            <div class="push"></div>
+                        </div>
+                        <div class="price"><p></p></div>
+                    </div>
+
+                    <p class="foodcattitle5">Torsdag Thai 120:-</p>
+
+                    <div class="menu" id="lunch-div">
+                        <div class="foodimg">
+                            <img src="../img/menu/thai/Wokadthailändska.webp" alt="">
+                        </div>
+                        <div class="fooddic">
+                            <div class="titdec">
+                                <p class="foodtitle">Wokad thailändska hot basilika & grönsaker</p>
+                                <p class="fooddescription">Alternativ: Kyckling/Nötkött/Räkor, serveras med ris.</p>
+                            </div>
+                        </div>
+                        <div class="foodimages">
+                            <img src="../img/menu/spicelevel4.png" alt="" class="spicy">
+                        </div>
+                        <div class="price"><p></p></div>
+                    </div>
+
+                    <div class="menu" id="lunch-div">
+                        <div class="foodimg">
+                            <img src="../img/menu/thai/Geangpet-rödcurry.png" alt="">
+                        </div>
+                        <div class="fooddic">
+                            <div class="titdec">
+                                <p class="foodtitle">Röd curry grytor med kokosmjölk</p>
+                                <p class="fooddescription">Alternativ: Kyckling/Nötkött/Räkor, serveras med ris.</p>
+                            </div>
+                        </div>
+                        <div class="foodimages">
+                            <img src="../img/menu/spicelevel4.png" alt="" class="spicy">
+                        </div>
+                        <div class="price"><p></p></div>
+                    </div>
+                    
+                    <p class="foodcattitle5">Fredag Thai 120:-</p>
+
+                    <div class="menu" id="lunch-div">
+                        <div class="foodimg">
+                            <img src="../img/menu/thai/Gratiem&prikthai.webp" alt="">
+                        </div>
+                        <div class="fooddic">
+                            <div class="titdec">
+                                <p class="foodtitle">Wokad svartpeppar & grönsaker</p>
+                                <p class="fooddescription">Alternativ: Kyckling/Nötkött/Räkor, serveras med ris.</p>
+                            </div>
+                        </div>
+                        <div class="foodimages">
+                            <img src="../img/menu/spicelevel4.png" alt="" class="spicy">
+                        </div>
+                        <div class="price"><p></p></div>
+                    </div>
+
+                    <div class="menu" id="lunch-div">
+                        <div class="foodimg">
+                            <img src="../img/menu/thai/Geangpet-rödcurry.png" alt="">
+                        </div>
+                        <div class="fooddic">
+                            <div class="titdec">
+                                <p class="foodtitle">Röd curry grytor med kokosmjölk</p>
+                                <p class="fooddescription">Alternativ: Kyckling/Nötkött/Räkor, serveras med ris.</p>
+                            </div>
+                        </div>
+                        <div class="foodimages">
+                            <img src="../img/menu/spicelevel4.png" alt="" class="spicy">
+                        </div>
+                        <div class="price"><p></p></div>
+                    </div>
+
+                    <div class="menu" id="lunch-div">
+                        <div class="foodimg">
+                            <img src="../img/menu/thai/Geangpaneng-Panangcurry.png" alt="">
+                        </div>
+                        <div class="fooddic">
+                            <div class="titdec">
+                                <p class="foodtitle">Panang curry grytor med kokosmjölk</p>
+                                <p class="fooddescription">Alternativ: Kyckling/Nötkött/Räkor, serveras med ris.</p>
+                            </div>
+                        </div>
+                        <div class="foodimages">
+                            <img src="../img/menu/spicelevel4.png" alt="" class="spicy">
+                        </div>
+                        <div class="price"><p></p></div>
+                    </div>
+
+                </div> <!--Lunch start-->
+
                 
+
+
+
             
                 <div id="thai" class="tabcontent"> <!--thai start-->
                     <p class="foodcattitle0">Thai</p>
@@ -270,7 +531,7 @@
                             </div>
                             <div class="price"><p>100kr</p></div>
                         </div>
-                </div> <!--Lunch end-->
+                </div> <!--thai end-->
     
                 <div id="sushi" class="tabcontent"> <!--sushi start-->
                     <p class="foodcattitle4">Sushi</p>
