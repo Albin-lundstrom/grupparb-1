@@ -63,9 +63,6 @@
 
 
 
-.mango-main-div {
-    grid-template-rows: 1fr 6fr 1fr;
-}
 
 #middle-box {
     background: linear-gradient(40deg, #45ff4e, #ffa722);
@@ -115,29 +112,26 @@
 }
 
 #text-box-k1 {
-    width: 1250px;
-    height: 300px;
+    width: 70vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
     text-align: center;
+    font-size: 30px;
 }
 
 #text-box-inner-h1-k1 {
     display: flex;
-    float: left;
-    height: 100%;
-    width: 50%;
-    font-size: 30px;
     align-items: center;
     justify-content: center;
 }
 
 #text-box-inner-h2-k1 {
     display: flex;
-    float: right;
-    height: 100%;
-    width: 50%;
     align-items: center;
     justify-content: center;
-    font-size: 30px;
 }
 
 .black-link {
@@ -203,3 +197,17 @@
     }
 }
 
+@media (max-width: 800px) {
+    #text-box-k1 {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        grid-row-gap: 50px;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 800px) {
+    #middle-box-k1 {
+        height: 500px;
+    }
+}
