@@ -235,7 +235,6 @@ body{
 
 .div-map iframe{
     width: 100vw;
-    height: 80%;
 }
 
 @media (max-width: 1000px){
